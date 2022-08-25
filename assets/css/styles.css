@@ -1,6 +1,6 @@
 /***  FONTS ***/
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 
 /***  VARIABLES & THEMES ***/
@@ -21,11 +21,11 @@
   --header-background-color: #e3e3e3;
   --highlight-color: #000000;
   --featured-font-family: "Archivo", sans-serif;
-  --character-top-image-src: url("../images/characters/kids-on-the-bike.svg");
+  --character-top-image-src: url("https://raw.githubusercontent.com/TheTobiass/MundoInvertido/79054c35b881ab71e5588c4417d411dd231424d0/assets/images/characters/kids-on-the-bike.svg");
   --character-top-image-color: #ffffff;
-  --character-bottom-image-src: url("../images/characters/inverted-world-monster.svg");
+  --character-bottom-image-src: url("https://raw.githubusercontent.com/TheTobiass/MundoInvertido/79054c35b881ab71e5588c4417d411dd231424d0/assets/images/characters/inverted-world-monster.svg");
   --character-bottom-image-color: #e5e5e5;
-  --background-lamp-image: url("../images/backgrounds/lamps.png");
+  --background-lamp-image: url("https://raw.githubusercontent.com/TheTobiass/MundoInvertido/main/assets/images/backgrounds/lamps.png");
   --footer-background-color: #b5bbbf;
 }
 
@@ -39,11 +39,11 @@
   --header-background-color: #220f0f;
   --highlight-color: #ffffff;
   --featured-font-family: "Rubik Glitch", sans-serif;
-  --character-bottom-image-src: url("../images/characters/kids-on-the-bike.svg");
+  --character-bottom-image-src: url("https://raw.githubusercontent.com/TheTobiass/MundoInvertido/79054c35b881ab71e5588c4417d411dd231424d0/assets/images/characters/kids-on-the-bike.svg");
   --character-bottom-image-color: rgba(255, 255, 255, 0.1);
-  --character-top-image-src: url("../images/characters/inverted-world-monster.svg");
+  --character-top-image-src: url("https://raw.githubusercontent.com/TheTobiass/MundoInvertido/79054c35b881ab71e5588c4417d411dd231424d0/assets/images/characters/inverted-world-monster.svg");
   --character-top-image-color: #000;
-  --background-lamp-image: url("../images/backgrounds/lamps-inverted.png");
+  --background-lamp-image: url("https://raw.githubusercontent.com/TheTobiass/MundoInvertido/main/assets/images/backgrounds/lamps-inverted.png");
   --footer-background-color: #000;
 }
 
@@ -83,13 +83,14 @@ h3 {
 
 p {
   color: var(--highlight-color);
+  font-size: 1.3rem;
 }
 
 p,
 input,
 textarea,
 label {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Josefin Sans", serif;
 }
 
 button {
@@ -110,6 +111,7 @@ main {
   align-items: center;
   position: relative;
 }
+
 
 main::before {
   content: "";
@@ -207,7 +209,7 @@ header::before {
   background-color: var(--character-top-image-color);
   bottom: -3px;
 
-  mask: var(--character-top-image-src) bottom / contain no-repeat;
+  mask: var(--character-top-image-src) bottom / 100% no-repeat;
   -webkit-mask: var(--character-top-image-src) bottom / 100% no-repeat;
 }
 
@@ -218,9 +220,10 @@ header::before {
   transform: rotateZ(180deg) scaleX(-1);
   position: relative;
 
-  mask: var(--character-bottom-image-src) bottom / contain no-repeat;
+  mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
   -webkit-mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
 }
+
 
 /*** SECTIONS STYLES ***/
 
@@ -401,6 +404,7 @@ footer {
 footer p {
   max-width: 700px;
   margin-bottom: 24px;
+  z-index: 1;
 }
 
 footer::before,
@@ -408,10 +412,12 @@ footer::after {
   content: "";
   width: 300px;
   height: 200px;
-  background: url("../images/footer/tape.svg") no-repeat;
+  background: url("https://raw.githubusercontent.com/TheTobiass/MundoInvertido/79054c35b881ab71e5588c4417d411dd231424d0/assets/images/footer/tape.svg") no-repeat;
   background-size: contain;
+  background-color: var(--tapes-color);
   position: absolute;
   bottom: -30px;
+  
 }
 
 footer::before {

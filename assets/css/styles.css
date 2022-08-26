@@ -1,9 +1,10 @@
-/***  FONTS ***/
+/* Fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 
-/***  VARIABLES & THEMES ***/
+/* Variables and Themes */
 
 :root {
   --primary-color: #cf0f0f;
@@ -59,7 +60,7 @@
   transform: rotateZ(180deg) scaleX(-1);
 }
 
-/***  GENERIC STYLES ***/
+/* Generic Styles */
 
 * {
   margin: 0;
@@ -147,7 +148,7 @@ textarea:focus-visible {
   border-color: black;
 }
 
-/*** HEADER STYLES ***/
+/* Header Styles */
 
 header {
   background-color: var(--header-background-color);
@@ -196,7 +197,7 @@ header::before {
   color: var(--primary-color-contrast);
 }
 
-/*** WORLD CHARACTERS STYLES ***/
+/* World Characters Styles */
 
 .world-characters {
   width: 100%;
@@ -225,7 +226,7 @@ header::before {
 }
 
 
-/*** SECTIONS STYLES ***/
+/* Section Styles */
 
 section {
   display: flex;
@@ -251,7 +252,7 @@ section {
   max-width: 300px;
 }
 
-/* Section 02 - Stranger Things Trailer */
+/* Section - Stranger Things Trailer */
 
 #section-stranger-things-trailer .section-texts {
   width: 50%;
@@ -279,7 +280,7 @@ section {
   border-image-slice: 10;
 }
 
-/* Section 03 - Stranger Things Gallery */
+/* Section - Stranger Things Gallery */
 
 #section-stranger-things-gallery {
   width: 100%;
@@ -316,7 +317,7 @@ section {
   border: 10px solid var(--highlight-color);
 }
 
-/* Section 04 - Dungeons & Dragons Form */
+/* Section - Dungeons & Dragons Form */
 
 #section-form {
   flex-direction: column;
@@ -388,7 +389,7 @@ section {
   color: var(--field-background-color);
 }
 
-/*** FOOTER STYLES ***/
+/* Footer Styles */
 
 footer {
   padding: 60px 0;

@@ -11,8 +11,7 @@
     projectId: "mundo-inverto",
     storageBucket: "mundo-inverto.appspot.com",
     messagingSenderId: "713434677339",
-    appId: "1:713434677339:web:c7b45febf48b52b1e07f7e",
-    measurementId: "G-GHWXJ0VLT5",
+    appId: "1:713434677339:web:c7b45febf48b52b1e07f7e"
   }
 
   // Initialize Firebase

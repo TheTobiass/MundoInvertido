@@ -1,4 +1,3 @@
-
 import { subscribeToHellfireClub } from './firebase/hellfire-clube.js'
 
 const txtName = document.getElementById('txtName')

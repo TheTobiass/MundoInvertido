@@ -10,7 +10,7 @@ const txtbtnSubscribe = document.getElementById('btnSubscribe')
 
 btnSubscribe.addEventListener('click', async () => {
     const subscription = {
-        nome: txtName.value,
+        name: txtName.value,
         email: txtEmail.value,
         level: txtLevel.value,
         character: txtCharacter.value

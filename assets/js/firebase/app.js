@@ -1,6 +1,6 @@
 
  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js"
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -12,8 +12,8 @@
     storageBucket: "mundo-inverto.appspot.com",
     messagingSenderId: "713434677339",
     appId: "1:713434677339:web:c7b45febf48b52b1e07f7e",
-    measurementId: "G-GHWXJ0VLT5"
-  };
+    measurementId: "G-GHWXJ0VLT5",
+  }
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig)
